@@ -19,10 +19,6 @@ const addExpense = ({
 });
 
 // REMOVE_EXPENSE
-// const removeExpense = (id) => ({
-//     type: 'REMOVE_EXPENSE',
-//     id
-// })
 const removeExpense = ({ id } = {}) => ({
     type: 'REMOVE_EXPENSE',
     id
@@ -69,8 +65,6 @@ const expensesReducerDefaultState = [];
 
 const expensesReducer = (state = expensesReducerDefaultState, action) => {
     switch (action.type) {
-        default:
-            return state;
         case 'ADD_EXPENSE':
             return [...state, action.expense];
         case 'REMOVE_EXPENSE':
@@ -87,6 +81,8 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
                     return expense;
                 }
             });
+        default:
+            return state;
     }
 };
 
