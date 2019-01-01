@@ -1,6 +1,8 @@
 // Get Visible Expenses
 
 export default (expenses, { text, sortBy, startDate, endDate }) => {
+    console.log('select Expenses: expenses', expenses);
+    console.log('select Expenses: filters - text: ' + text + ' sortBy: ' + sortBy + ' startDate: ' + startDate +  ' endDate: ' + endDate);
     return expenses.filter((expense) => {
         const startDateMatch = typeof startDate !== 'number' || expense.createdAt >= startDate;
         const endDateMatch = typeof endDate !== 'number' || expense.createdAt <= endDate;
