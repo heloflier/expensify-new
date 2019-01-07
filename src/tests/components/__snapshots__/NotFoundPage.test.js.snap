@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should rended NotFoundPage correctly 1`] = `
+<div>
+  404! These are not the droids you're looking for... 
+  <Link
+    replace={false}
+    to="/"
+  >
+    Go Home
+  </Link>
+</div>
+`;

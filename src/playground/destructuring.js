@@ -1,4 +1,3 @@
-console.log('destructuring');
 
 //
 // Object destructuring
