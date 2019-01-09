@@ -85,7 +85,6 @@ test('should set new date on date change', () => {
 test('should set calendar focus on change', () => {
     const focused =  true;
     const wrapper = shallow(<ExpenseForm />);
-    console.log('----------------------- ', {focused})
     wrapper.find('SingleDatePicker').prop('onFocusChange')({ focused });
     expect(wrapper.state('calendarFocused')).toBe(focused);
 });
