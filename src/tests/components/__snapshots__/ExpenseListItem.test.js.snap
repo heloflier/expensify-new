@@ -3,15 +3,25 @@
 exports[`should render ExpenseListItem with expense 1`] = `
 <div>
   <Link
+    className="list-item"
     replace={false}
     to="/edit/undefined"
   >
-    <h3 />
+    <div>
+      <h3
+        className="list-item__title"
+      />
+      <span
+        className="list-item__sub-title"
+      >
+        December 31st, 1969
+      </span>
+    </div>
+    <h3
+      className="list-item__data"
+    >
+      $0.00
+    </h3>
   </Link>
-  <p>
-    $0.00
-    -
-    December 31st, 1969
-  </p>
 </div>
 `;
